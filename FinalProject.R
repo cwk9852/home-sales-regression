@@ -10,7 +10,7 @@ housing.training <- housing.training[,-1]; #removing the ID's
 housing.testing <- housing.testing[,-1]; #removing the ID's
 housing.combined <- rbind(housing.training, housing.testing); #make a combined dataframe
 min(housing.combined$YrSold);
-ax(housing.combined$YrSold);
+max(housing.combined$YrSold);
 dim(housing.training);
 str(housing.training);
 
